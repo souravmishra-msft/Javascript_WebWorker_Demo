@@ -10,8 +10,8 @@ Reference: [Web Workers API](https://developer.mozilla.org/en-US/docs/Web/API/We
 
 In this project, I have two buttons:
 
-1. Calculate Sum: This button calculates the sum of all the numbers from 1 to 10 billion. Quite a long-running function.
-2. Change Background: This button can change the background of this app with a random color.
+1. **Calculate Sum:** This button calculates the sum of all the numbers from 1 to 10 billion. Quite a long-running function.
+2. **Change Background:** This button can change the background of this app with a random color.
 
 When you run the index.html file present inside the **Before_Adding_Web_Worker** directory, you would find that once you click the `CALCULATE SUM` button, it blocks all other activities on the webpage. Until the calculation ends, all other activities like clicking the `CHANGE BACKGROUND` button clicks are blocked.
 This happens since, Javascript is a single threaded language, and hence until the first operation ends, the next one cannot execute.
