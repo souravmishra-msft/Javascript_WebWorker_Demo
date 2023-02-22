@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: #1b1919;
+  color: #ffff;
+}
+
+.main-container h2 {
+  margin: 30px;
+  font-size: 40px;
+}
+
+.container {
+  width: 70%;
+  padding: 50px 0;
+  background: #2b2929;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress {
+  width: 100%;
+  display: none;
+}
+
+.progress h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#progress-bar::-webkit-progress-bar {
+  background-color: black;
+  width: 100%;
+  border-radius: 15px;
+}
+#progress-bar {
+  margin: 10px 0;
+  width: 80%;
+  height: 30px;
+  background-color: black;
+  border-radius: 15px;
+}
+
+#progress-bar::-webkit-progress-value {
+  background: #f00144;
+  border-radius: 15px;
+}
+
+.progress-value {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.btn-grp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sumBtn,
+.changeBgBtn {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 800;
+  color: #ffff;
+  background: #000;
+  padding: 5px 10px;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid #f00144;
+  border-radius: 50px;
+}
+
+.sumBtn:disabled {
+  color: #fdfcfc;
+  background: #727272;
+  border: 2px solid #dbdbdb;
+  border-radius: 50px;
+}
+
+.output {
+  width: 80%;
+  padding: 30px 0;
+  background: #2b2929;
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  display: none;
+}
+
+.text,
+.result {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}

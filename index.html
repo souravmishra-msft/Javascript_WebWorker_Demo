@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Worker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <h2>Web Worker Demo</h2>
+      <div class="container">
+        <div class="progress">
+          <h3>Calculating the Sum...</h3>
+          <progress id="progress-bar" value="0" max="100"></progress>
+          <div class="progress-value" id="progress-value"></div>
+        </div>
+
+        <div class="output">
+          <!-- <span class="fas fa-check"></span> -->
+          <div class="text">Calculation done!</div>
+          <div class="result"></div>
+        </div>
+
+        <div class="btn-grp">
+          <button class="sumBtn" onclick="startCalculation()">
+            Calculate Sum
+          </button>
+          <button class="changeBgBtn" onclick="changeBackGroundColor()">
+            Change Background
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
